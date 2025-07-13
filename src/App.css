@@ -1,0 +1,190 @@
+@import "tailwindcss";
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.bg{
+  background-image: url('./assets/topback.png');
+   color: black;
+          width: 100%;
+
+          height: 650px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+.bglog{
+  background: transparent;
+  width: 650px;
+  /* height: 800px; */
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  /* border: 2px solid red; */
+  justify-content: center;
+ background-color: rgb(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    gap: 5px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+     /* backdropFilter: "blur(10px)", // frosted glass effect */
+
+}
+.bgdiv{
+  background-image: url('./assets/login.png');
+  background-size: cover;
+  justify-content:center;
+  /* background-color: red; */
+  height: 100%;
+}
+/* .ripple-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: rippleEffect 0.6s linear;
+  transform: scale(0);
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+} */
+.hover-underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #3b82f6; /* Tailwind blue-500 */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.char-span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+}
+
+.wave-hover:hover .char-span {
+  animation: wave 0.2s ease forwards;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.char-span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.wave-hover:hover .char-span {
+  animation: wave 0.6s ease forwards;
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.wrapper  {
+            /* font-family: monospace; */
+            /* font-size: 1.5rem; */
+            /* margin-inline: auto; */
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0px solid;
+            animation: pritam 2.5s steps(18) forwards;
+            /* animation: blink 2.5s ; */
+
+        }
+            @keyframes pritam {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+                
+            }
+        }
+
+
